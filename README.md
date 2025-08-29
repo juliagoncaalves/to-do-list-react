@@ -1,12 +1,109 @@
-# React + Vite
+# 📝 To-Do List com React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto simples de lista de tarefas desenvolvido com **React + Vite**, permitindo adicionar, editar, marcar e remover tarefas.  
+O deploy foi feito utilizando o **GitHub Pages**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demonstração
 
-## Expanding the ESLint configuration
+🔗 [Acesse o projeto online](https://juliagoncaalves.github.io/to-do-list-react/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Funcionalidades
+
+- ➕ Adicionar novas tarefas  
+- ✏️ Editar tarefas existentes  
+- ✅ Marcar/desmarcar como concluídas  
+- ❌ Excluir tarefas  
+- 💾 Persistência no navegador (localStorage)
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- [React](https://react.dev/)  
+- [Vite](https://vitejs.dev/)  
+- [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
+
+---
+
+## 📂 Estrutura de Pastas
+
+```bash
+to-do-list-react/
+│── public/          
+│── src/             
+│   ├── components/  
+│   ├── App.jsx     
+│   ├── main.jsx    
+│── .gitignore
+│── index.html
+│── package.json
+│── vite.config.js   
+│── README.md
+```
+
+---
+
+## ⚙️ Como Rodar Localmente
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/juliagoncaalves/to-do-list-react.git
+```
+
+Acesse a pasta do projeto:
+
+```bash
+cd to-do-list-react
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Rode o servidor de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+Abra no navegador:
+
+```bash
+http://localhost:5173/
+```
+
+## 🌐 Deploy no GitHub Pages
+
+O projeto já está configurado para GitHub Pages.
+Para fazer o deploy, siga os passos abaixo:
+
+Gere o build de produção:
+
+```bash
+npm run build
+```
+
+Publique no GitHub Pages:
+
+```bash
+npm run deploy
+```
+
+Após alguns minutos, o site estará disponível em:
+https://juliagoncaalves.github.io/to-do-list-react/
+
+## 👩‍💻 Autora
+
+Feito por Júlia Gonçalves do Carmo Silva
+
+🔗 [LinkedIn](https://www.linkedin.com/in/juliagoncaalves/)
+
+🔗 [Portfólio](https://github.com/juliagoncaalves)
