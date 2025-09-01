@@ -13,36 +13,62 @@ O deploy foi feito utilizando o **GitHub Pages**.
 
 ## 📌 Funcionalidades
 
-- ➕ Adicionar novas tarefas
-- ✏️ Editar tarefas existentes
-- ✅ Marcar/desmarcar como concluídas
-- ❌ Excluir tarefas
+- ➕ Adicionar novas tarefas  
+- ✏️ Editar tarefas existentes  
+- ✅ Marcar/desmarcar como concluídas  
+- ❌ Excluir tarefas  
 - 💾 Persistência no navegador (localStorage)
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- [React](https://react.dev/)
-- [Vite](https://vitejs.dev/)
-- [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [React](https://react.dev/)  
+- [Vite](https://vitejs.dev/)  
+- [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)  
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
 
 ---
+
+## 📸 Prints da Aplicação
+
+## Tela Inicial 
+![Tela Inicial](./src/screenshots/tela-inicial.png)
+
+## Tela Input
+![Tela Input](./src/screenshots/tela-adicionar.png)
+
+## Tela Lista
+![Tela Lista](./src/screenshots/tela-lista.png)
+
+## Tela Lista Alternada
+![Tela Alternada](./src/screenshots/tela-alternada.png)
+
+
+## Tela Editar
+![Tela Editar](./src/screenshots/tela-editar.png)
+
+## Tela Salvar
+![Tela Salvar](./src/screenshots/tela-salvar.png)
+
+## Tela Limpar Lista Completa
+![Tela Remover](./src/screenshots/tela-remocao-completa.png)
+
+## Tela Card Responsivo
+![Tela Card Responsivo](./src/screenshots/tela-truncate.png)
 
 ## 📂 Estrutura de Pastas
 
 ```bash
 to-do-list-react/
-│── public/
-│── src/
-│   ├── components/
-│   ├── App.jsx
-│   ├── main.jsx
+│── public/          
+│── src/               
+│   ├── App.jsx     
+│   ├── main.jsx    
 │── .gitignore
 │── index.html
 │── package.json
-│── vite.config.js
+│── vite.config.js   
 │── README.md
 ```
 
@@ -77,7 +103,7 @@ npm run dev
 Abra no navegador:
 
 ```bash
-http://localhost:5173/
+http://localhost/
 ```
 
 ## 🌐 Deploy no GitHub Pages
