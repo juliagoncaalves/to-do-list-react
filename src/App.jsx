@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { DndContext, closestCenter } from '@dnd-kit/core';
 import {
   arrayMove,
@@ -31,7 +31,7 @@ function Tarefa({
     backgroundColor: 'white',
     display: 'flex',
     alignItems: 'center',
-    minHeight: '50px', // altura mínima para não aumentar
+    minHeight: '50px',
     maxHeight: '50px',
   };
 
@@ -57,7 +57,7 @@ function Tarefa({
         </span>
       </div>
 
-      <div className="tarefa-texto">
+      <div className="tarefa-texto" style={{ flex: 1, marginLeft: '8px' }}>
         {editandoId === item.id ? (
           <input
             type="text"
@@ -91,9 +91,18 @@ function Tarefa({
 
 function App() {
   const [tarefa, setTarefa] = useState('');
-  const [itens, setItens] = useState([]);
+  const [itens, setItens] = useState(() => {
+    // Inicializa a lista a partir do localStorage
+    const saved = localStorage.getItem('itens');
+    return saved ? JSON.parse(saved) : [];
+  });
   const [textoEditando, setTextoEditando] = useState('');
   const [editandoId, setEditandoId] = useState(null);
+
+  // Salva no localStorage sempre que a lista mudar
+  useEffect(() => {
+    localStorage.setItem('itens', JSON.stringify(itens));
+  }, [itens]);
 
   function adicionarNaLista() {
     if (!tarefa.trim()) return;
@@ -149,6 +158,7 @@ function App() {
   function limparLista() {
     if (window.confirm('Deseja realmente limpar toda a lista?')) {
       setItens([]);
+      localStorage.removeItem('itens');
     }
   }
 
